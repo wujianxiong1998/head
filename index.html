@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 样式 -->
+  <link rel="stylesheet/less" type="text/css" href="./static/css/global.css">
+  <link rel="stylesheet/less" type="text/css" href="./static/css/index.less">
+  <!-- 逻辑 -->
+  <script src="./js/less.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/flexible.js"></script>
+  <script src="./js/util.js"></script>
+  <script src="./js/slideIn.js"></script>
+  <script src="./js/index.js"></script>
+  <title>气象大脑驾驶舱</title>
+</head>
+
+<body style='min-width:1280px;overflow: hidden;'>
+  <div class="home relative">
+    <!-- 大脑 -->
+    <div class="content absolute w-full h-full flex justify-center items-center">
+      <div class="head-box relative">
+        <img class="head-bg absolute" src="./static/img/animation/head-bg.png" alt="">
+        <img class="head-pic absolute" src="./static/img/animation/head.png" alt="">
+        <img class="head-line absolute" src="./static/img/animation/line.png" alt="">
+        <div class="name absolute">气象大脑</div>
+        <div id="zj-fiveSystem"></div>
+      </div>
+      <div id="zj-otherSystem" class="otherSystem absolute flex">
+        <div class="box flex">
+          <div class="label flex justify-center items-center">XXX系统</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header fixed flex justify-center items-center">
+      <div class="title">浙江省气象驾驶舱</div>
+    </div>
+
+    <!-- 左侧 -->
+    <div class="panel left-panel absolute flex flex-col justify-between">
+      <div class="box-bg relative slideLeft">
+        <div class="dot dot1 absolute"></div>
+        <div class="dot dot2 absolute"></div>
+        <div class="dot dot3 absolute"></div>
+        <div class="dot dot4 absolute"></div>
+        <div class="name flex items-center">天擎气象大数据云平台</div>
+        <div id="zj-tq" class="list flex flex-wrap"></div>
+        <div id="zj-interface-info" class="flex justify-between items-center"></div>
+        <div id="zj-interface-chart" class="interface-chart"></div>
+      </div>
+
+      <div class="box-bg relative slideLeft">
+        <div class="dot dot1 absolute"></div>
+        <div class="dot dot2 absolute"></div>
+        <div class="dot dot3 absolute"></div>
+        <div class="dot dot4 absolute"></div>
+        <div class="name flex items-center">人工智能与区块链概况</div>
+        <div id="zj-ai" class="list flex flex-wrap"></div>
+      </div>
+    </div>
+
+    <!-- 右侧 -->
+    <div class="panel right-panel absolute flex flex-col justify-between">
+      <!-- 应用开放平台 -->
+      <div class="box-bg relative slideRight">
+        <div class="dot dot1 absolute"></div>
+        <div class="dot dot2 absolute"></div>
+        <div class="dot dot3 absolute"></div>
+        <div class="dot dot4 absolute"></div>
+        <div class="name flex items-center">应用开放平台</div>
+        <div id="zj-app" class="list flex flex-wrap"></div>
+      </div>
+
+      <!-- 算法管理平台 -->
+      <div class="box-bg relative slideRight">
+        <div class="dot dot1 absolute"></div>
+        <div class="dot dot2 absolute"></div>
+        <div class="dot dot3 absolute"></div>
+        <div class="dot dot4 absolute"></div>
+        <div class="name flex items-center">算法管理平台</div>
+        <div id="zj-alg" class="list flex flex-wrap"></div>
+      </div>
+
+      <!-- 统一身份认证平台 -->
+      <div class="box-bg relative slideRight">
+        <div class="dot dot1 absolute"></div>
+        <div class="dot dot2 absolute"></div>
+        <div class="dot dot3 absolute"></div>
+        <div class="dot dot4 absolute"></div>
+        <div class="name flex items-center">统一身份认证平台</div>
+        <div id="zj-identify" class="list flex flex-wrap"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
